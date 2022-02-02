@@ -1,9 +1,5 @@
 'use strict'
-/*
-
-    FUNCIONES
-
-*/
+// FUNCIONES
 
 // Nota funciones son como sub-programas donde podemos ejecutarlo tantas veces como necesitemos
 
@@ -53,6 +49,5 @@ function restarNum(res1, res2, escribe) {
 }
 
 document.write('<br>'+restarNum(20,5, function(dato){document.write('<br>hola soy callback '+dato)}));
-
 
 // Realizaremos ejersicios completos con todo lo aprendido
