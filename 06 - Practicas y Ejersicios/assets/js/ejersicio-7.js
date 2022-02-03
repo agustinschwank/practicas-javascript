@@ -20,7 +20,7 @@
 
 /*
 function toBinari(number) {
-    return (number.toString(2))
+    return (number.toString(2));
 }
 
 console.log('En binario es: '+toBinari(parseInt(prompt('Ingrese numero decimal'))));

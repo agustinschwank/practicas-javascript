@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Ejersicio 1  DOM</title>
+
+        <style>
+            .box{
+                display: block;
+                float: left;
+                background: silver;
+                width: 200px;
+                height: 200px;
+                border: 2px solid black;
+                margin-left: 10px;
+                text-align: center;
+                line-height: 200px;
+                font-size: 26px;
+            }
+            .clearfix {float: none;clear: both;}
+            #links > li {font-size: 24px;}
+        </style>
+    </head>
+    <body>
+        <h1>Ejersicio 1  DOM</h1>
+
+        <div id="boxs">
+            <div class="box">BOX 1</div>
+            <div class="box">BOX 2</div>
+            <div class="box">BOX 3</div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <ul id="links">
+            <li><a href="https://www.link1.com"></a></li>
+            <li><a href="https://www.link2.com"></a></li>
+            <li><a href="https://www.link3.com"></a></li>
+        </ul>
+
+        <!-- Scripts -->
+        <script src="./assets/js/ejersicio-1.js"></script>
+    </body>
+</html>
