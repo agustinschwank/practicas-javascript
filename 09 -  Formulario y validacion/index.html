@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Formulario y Validacion</title>
+    <style>
+        #formulary input {
+            margin-bottom: 15px;
+        }
+    </style>
+    <body>
+        <h1>Formulario y Validacion</h1>
+
+        <div class="content">
+            <form id="formulary" action="#" method="post" onsubmit="return false">
+                <input type="text" name="name" id="name" placeholder="Nombre*"/>
+                <br>
+                <input type="text" name="lastname" id="lastname" placeholder="Apellido*"/>
+                <br>
+                <input type="text" name="email" id="email" placeholder="E-mail*"/>
+                <br>
+                <input type="submit" value="ENVIAR FORMULARIO" name="submit" id="submit"/>
+            </form>
+        </div>
+
+        <div class="mostrar"></div>
+
+        <!-- Scripts -->
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
