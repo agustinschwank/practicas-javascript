@@ -6,7 +6,6 @@
 
 'use strict'
 
-
 var formulary = document.querySelector('#formulary');
 var _name = document.querySelector('#name');
 var _lastname = document.querySelector('#lastname');
