@@ -3,6 +3,8 @@
 //https://flagcdn.com/es/codes.json
 //https://flagcdn.com/256x192/ar.png
 
+
+
 fetch('https://flagcdn.com/es/codes.json')
     .then(paises => paises.json())
     .then(paises => {
@@ -25,8 +27,9 @@ getPaises()
                         </div>`;
         };
         countrie.innerHTML = template;
-        var gif = document.querySelector('#gif4');
-        gif.style.display = 'none';
+        //var gif = document.querySelector('#gif4');
+        //gif.style.display = 'none';
     });
 
 function getPaises(){return (fetch('https://flagcdn.com/es/codes.json'))};
+
