@@ -30,11 +30,11 @@ $(document).ready(() => {
 
     // Selector de clase
     $('.boxcl').click(()=>{
-        if($('.boxcl').html() != 'Hola'){
-            $('.boxcl').html('Hola')
+        if($('.boxcl').text() != 'Hola'){
+            $('.boxcl').text('Hola')
                         .css('background', 'lightblue');
         } else {
-            $('.boxcl').html('Texto')
+            $('.boxcl').text('Texto')
                         .css('background', 'lightgreen');
         }
     });
@@ -44,6 +44,10 @@ $(document).ready(() => {
                       .css('background', 'lightpink');
 
 
+    // Selector de Atiqueta
+    // podriamos $('#box1 ul li'),
+
+
     /* Eventos
 
         ademas del click, visto anteriormente tenemos los mismos que en js vainilla
@@ -51,7 +55,27 @@ $(document).ready(() => {
     */
 
     // Animaciones
-    $('.boxcl').fadeIn('slow');
+    //$('.boxcl').fadeOut(1500);
+    //$('.boxcl').slideToggle('slow');
+
+    //Atributos
+    $('[type="text"]').attr('class','color'); // agregamos en atributo class='color', no funciona porque no lo creamos en css
+    $('[type="text"]').removeAttr('class'); // removemos todas las clases
+    // tenemos html(), text(), mencionados anterioremente
+
+    // Trabajamos con las clases
+    $('[type="text"]').addClass('color visible'); // agregamos la clase, tambien se ccrea el atributo si no existe
+    $('[type="text"]').removeClass('color'); // removemos color y queda visible
+    $('[type="text"]').toggleClass('color visible'); // Obserbamos que si la clase esta la elimina, sino la crea
+
+    // Podemos crear estylos css con utilizando JSON
+    var styleJson = {
+        background: 'blue',
+        border: '5px solid yellow',
+        padding: '10px'
+    }
+
+    // $('[type="text"]').css(styleJson);
 
 });
 
